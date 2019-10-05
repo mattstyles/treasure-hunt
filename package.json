@@ -1,0 +1,52 @@
+{
+  "name": "treasure-hunt",
+  "private": true,
+  "version": "0.0.0",
+  "description": "POC for pixi-holga and pixi-spritepool",
+  "main": "dist/index.html",
+  "scripts": {
+    "setup": "lerna bootstrap --concurrency=1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "(cd packages/app && yarn start)"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mattstyles/treasure-hunt.git"
+  },
+  "author": "Matt Styles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattstyles/treasure-hunt/issues"
+  },
+  "homepage": "https://github.com/mattstyles/treasure-hunt#readme",
+  "lint-staged": {
+    "*.js": [
+      "standard"
+    ],
+    "*.jsx": [
+      "standard"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "**/node_modules/**",
+      "**/lib/"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "husky": "^3.0.8",
+    "lerna": "^3.16.4",
+    "lint-staged": "^9.4.1",
+    "standard": "^14.3.1"
+  }
+}

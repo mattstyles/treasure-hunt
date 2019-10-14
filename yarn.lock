@@ -1645,6 +1645,11 @@
     npmlog "^4.1.2"
     write-file-atomic "^2.3.0"
 
+"@mattstyles/match@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@mattstyles/match/-/match-1.0.1.tgz#fc69192e2f5c57a36733c62f7ebb69025756ddcf"
+  integrity sha512-5t1h7y4pbzpQ/vekIrN14o3EBPbDyl2KMd70Vbk89zq1vm+0rHcOO1XzdeAdVTxX+QZ9kMZUTLinImPca4qDwg==
+
 "@most/multicast@^1.2.5":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@most/multicast/-/multicast-1.3.0.tgz#e01574840df634478ac3fabd164c6e830fb3b966"
@@ -2196,6 +2201,11 @@ acorn@^7.0.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.1.0.tgz#949d36f2c292535da602283586c2477c57eb2d6c"
   integrity sha512-kL5CuoXA/dgxlBbVrflsflzQ3PAas7RYZB52NOm/6839iVYJgKMJ3cQJD+t2i5+qFa8h3MDpEOJiS64E8JLnSQ==
+
+actionkey@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/actionkey/-/actionkey-1.0.1.tgz#b2a66200d93565763e3f964c4d560737ad582737"
+  integrity sha1-sqZiANk1ZXY+P5ZMTVYHN61YJzc=
 
 agent-base@4, agent-base@^4.3.0:
   version "4.3.0"
@@ -2974,6 +2984,13 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000989:
   version "1.0.30000998"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000998.tgz#7227a8046841e7d01e156ae7227a504d065f6744"
   integrity sha512-8Tj5sPZR9kMHeDD9SZXIVr5m9ofufLLCG2Y4QwQrH18GIwG+kCc+zYdlR036ZRkuKjVVetyxeAgGA1xF7XdmzQ==
+
+canvas-fit@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/canvas-fit/-/canvas-fit-1.5.0.tgz#ae13be66ade42f5be0e487e345fce30a5e5b5e5f"
+  integrity sha1-rhO+Zq3kL1vg5IfjRfzjCl5bXl8=
+  dependencies:
+    element-size "^1.1.1"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -4090,6 +4107,11 @@ elegant-spinner@^1.0.1:
   resolved "https://registry.yarnpkg.com/elegant-spinner/-/elegant-spinner-1.0.1.tgz#db043521c95d7e303fd8f345bedc3349cfb0729e"
   integrity sha1-2wQ1IcldfjA/2PNFvtwzSc+wcp4=
 
+element-size@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/element-size/-/element-size-1.1.1.tgz#64e5f159d97121631845bcbaecaf279c39b5e34e"
+  integrity sha1-ZOXxWdlxIWMYRby67K8nnDm1404=
+
 elliptic@^6.0.0:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.1.tgz#c380f5f909bf1b9b4428d028cd18d3b0efd6b52b"
@@ -4490,6 +4512,11 @@ eventemitter3@^3.1.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
 
+eventemitter3@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.0.tgz#d65176163887ee59f386d64c82610b696a4a74eb"
+  integrity sha512-qerSRB0p+UDEssxTtm6EDKcE7W4OaoisfIMl4CngyEhjpYglocpNg6UEqCvemdGhosAsg4sO2dXJOdyBifPGCg==
+
 events@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/events/-/events-3.0.0.tgz#9a0a0dfaf62893d92b875b8f2698ca4114973e88"
@@ -4798,6 +4825,13 @@ for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
   integrity sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=
+
+force-array@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/force-array/-/force-array-3.1.0.tgz#a060f6d4188dc7daa6fe562df39aeaabca404784"
+  integrity sha1-oGD21BiNx9qm/lYt85rqq8pAR4Q=
+  dependencies:
+    is-array "^1.0.1"
 
 foreach@^2.0.5:
   version "2.0.5"
@@ -5600,6 +5634,11 @@ is-accessor-descriptor@^1.0.0:
   integrity sha512-m5hnHTkcVsPfqx3AKlyttIPb7J+XykHvJP2B9bZDjlhLIoEq4XoK64Vg7boZlVWYK6LUY94dYPEE7Lh0ZkZKcQ==
   dependencies:
     kind-of "^6.0.0"
+
+is-array@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-array/-/is-array-1.0.1.tgz#e9850cc2cc860c3bc0977e84ccf0dd464584279a"
+  integrity sha1-6YUMwsyGDDvAl36EzPDdRkWEJ5o=
 
 is-arrayish@^0.2.1:
   version "0.2.1"
@@ -7736,7 +7775,22 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
-pixi.js@^5.1.5:
+pixi-holga@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/pixi-holga/-/pixi-holga-0.5.0.tgz#347173e2bf6c0f6c465559e5ed75fe6652b23ce6"
+  integrity sha512-eil8/rDB+VbTev8Urjul9eGsURei2jrTXyB3fjpdwbeoQ3bUFrNIruLwQl+unT3Q+09s7mzpgUZ3Yjbt1KZWhw==
+  dependencies:
+    eventemitter3 "^4.0.0"
+    mathutil "^2.3.0"
+
+pixi-spritepool@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/pixi-spritepool/-/pixi-spritepool-0.1.0.tgz#b53de7fb63aec8107c9848507d998cf8fe372123"
+  integrity sha512-pfwctOckbyPBHqOyXJz1XyGK3Gke5gjhRwH1SfSHsaS4Y/SLIyz/nwM3rGFCrnoUWjH6HcvFS2rHaR3dZsmfJg==
+  dependencies:
+    pixi.js "^5.0.0"
+
+pixi.js@^5.0.0, pixi.js@^5.1.5:
   version "5.1.5"
   resolved "https://registry.yarnpkg.com/pixi.js/-/pixi.js-5.1.5.tgz#96e8140652c8f53d5adde9d679d5a8f8a0ef626f"
   integrity sha512-VUvM/eoOahQV1wx+wEOM7/Xw+XXdbwP3qGaANZKeJAyVvOa4ZcsSTyWHV9bAITOJFyoLhJ/h7h2QCNtvv1s/WA==
@@ -8399,14 +8453,30 @@ raf@~3.1.0:
   dependencies:
     performance-now "~0.2.0"
 
-raid-streams@^3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/raid-streams/-/raid-streams-3.3.3.tgz#e05ab45b304b4730c3212bb26f445856020e2e52"
-  integrity sha512-YSkzhFwz/iGOtNVoV+93fIKgKwGg6C2fmogWko9YDThtdvOvaVaIocB2CdhFdVclmsKN+KO4DaIce+qdEDdC2w==
+raid-addons@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/raid-addons/-/raid-addons-3.4.0.tgz#a33512aef73613ae548e2ce78aba73fcfba9d39c"
+  integrity sha512-+eeTboQ27pDKLLoejIu7Pb58dIdmND7Y2P+7vSJtZYGr/pD++zB26AfS53nJ1LvZVGnw7fOJPZCY2MuwCg+A0A==
+  dependencies:
+    "@mattstyles/match" "^1.0.1"
+    force-array "^3.1.0"
+
+raid-streams@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/raid-streams/-/raid-streams-3.4.0.tgz#9a93fbbe4fcf38c6f51fc57730d6890929805c1a"
+  integrity sha512-k5h5WbS4xdQYcU59dONyuLDw/UVO84XHEI8wbYBygTFdXumQkfIw6UFwtUOKtIlK+zSWwLTogvUPqcK/ZEW2kA==
   dependencies:
     most "^1.7.3"
     raf-stream "^3.0.0"
     vkey "^1.0.1"
+
+raid@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/raid/-/raid-3.4.0.tgz#e1c513c4a19729ff002beef76674a9d218c8a86c"
+  integrity sha512-3+qAl+v3sdftsHZw8+3NfilZcs4KhKFg4srcAbjrZ9c2O59PhV+EYOEs08KHX/v5MH8O7G70s+FjXNgQx4ys5A==
+  dependencies:
+    eventemitter3 "^4.0.0"
+    most "^1.7.3"
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"

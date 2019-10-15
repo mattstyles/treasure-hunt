@@ -5,6 +5,7 @@ import keys from 'raid-streams/keys'
 import tick from 'raid-streams/tick'
 
 import { resizeScreen, debug } from './core/effects'
+import { appUpdates } from './core/updates'
 import { signal } from './core/state'
 
 /**
@@ -26,7 +27,7 @@ signal.mount(resize({
   el: window
 }))
 signal.mount(keys())
-// signal.mount(tick())
+signal.mount(tick())
 
 /**
  * Attach effect handlers
@@ -38,3 +39,16 @@ if (process.env.DEBUG) {
 signal.register(resizeScreen({
   onResize: resizeApp
 }))
+
+signal.register(appUpdates)
+
+/**
+ * Start app loop
+ */
+signal.observe(
+  state => {
+    window.state = state
+  },
+  err => {
+    console.error(err)
+  })

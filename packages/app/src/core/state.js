@@ -12,7 +12,8 @@ const appStates = actionkey('@app', [
 ])
 
 const initial = {
-  appState: appStates.start
+  appState: appStates.start,
+  config: {}
 }
 
 export const signal = Signal.of(initial)

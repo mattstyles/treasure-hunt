@@ -1,8 +1,12 @@
 
-const render = () => {
-  // console.log('rendering state intiial')
+import { AppState } from './appState'
+
+class State extends AppState {
+  static name = 'initial'
+
+  render (state) {
+    console.log('initial state :: rendering', state)
+  }
 }
 
-export default {
-  render
-}
+export const state = new State()

@@ -38,7 +38,7 @@ export const render = () => compress({
     stats.begin()
     const { render } = getState(state.appState)
 
-    render()
+    render(state)
     stats.end()
   })
 })

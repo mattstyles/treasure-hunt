@@ -1,7 +1,7 @@
 
 import actionkey from 'actionkey'
 
-import initial from './initial'
+import { state as initialState } from './initial'
 
 export const appStates = actionkey('@app', [
   'initial',
@@ -10,7 +10,7 @@ export const appStates = actionkey('@app', [
 ])
 
 const idMap = {
-  [appStates.initial]: initial
+  [appStates.initial]: initialState
 }
 
 export const getState = id => {

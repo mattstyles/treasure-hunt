@@ -3,16 +3,11 @@ import { Signal } from 'raid'
 import { plug } from 'raid-addons/lib/plug'
 import { lock } from 'raid-addons/lib/lock'
 import arc from 'raid-addons/lib/arc'
-import actionkey from 'actionkey'
 
-const appStates = actionkey('@app', [
-  'start',
-  'running',
-  'fin'
-])
+import { appStates } from '../states/index'
 
 const initial = {
-  appState: appStates.start,
+  appState: appStates.initial,
   config: {}
 }
 

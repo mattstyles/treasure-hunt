@@ -60,3 +60,14 @@ const mock = {
 }
 
 export const stats = process.env.DEBUG ? st : mock
+
+/**
+ * Create screen and app objects here
+ */
+export const screen = createCanvas()
+export const { app, resize: resizeApp } = createApplication({
+  canvas: screen,
+  appProps: {
+    backgroundColor: 0x333333
+  }
+})

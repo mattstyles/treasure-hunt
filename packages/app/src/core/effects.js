@@ -5,8 +5,14 @@ import rawDebug from 'raid-addons/lib/debug'
 import scope from 'raid-addons/lib/scope'
 import { actions } from 'raid-streams/screen'
 
+import { tickActions } from './streams'
 import { noop } from './utils'
+import { getState } from '../states/index'
+import { stats } from '../app'
 
+/**
+ * Fires the callback in response to a screen resize event
+ */
 export const resizeScreen = ({
   onResize = noop
 } = {}) => compress({
@@ -23,3 +29,16 @@ export const debug = _ => scope(
   },
   rawDebug(_)
 )
+
+/**
+ * Render ion
+ */
+export const render = () => compress({
+  [tickActions.tick]: safe((state, event) => {
+    stats.begin()
+    const { render } = getState(state.appState)
+
+    render()
+    stats.end()
+  })
+})

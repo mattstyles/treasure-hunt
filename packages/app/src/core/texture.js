@@ -4,7 +4,7 @@ import { Texture, Rectangle, settings, SCALE_MODES } from 'pixi.js'
 // @TODO use 1x for window.devicePixelRatio === 1
 // In our case using the 1x is actually fine as we're nearest neighbour
 // blending anyways
-import spritesheet from '../cp437@2x.png'
+import spritesheet from '../assets/cp437@2x.png'
 
 // Texture size is the size of the atlas, in this case 16 by 16 items
 const TEX_SIZE = [16, 16]

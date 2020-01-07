@@ -5,10 +5,13 @@ import { lock } from 'raid-addons/lib/lock'
 import arc from 'raid-addons/lib/arc'
 
 import { appStates } from '../states/index'
+import { getScreenSize } from './app'
 
 const initial = {
   appState: appStates.initial,
-  config: {}
+  config: {
+    ...getScreenSize()
+  }
 }
 
 export const signal = Signal.of(initial)

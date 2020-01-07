@@ -71,3 +71,7 @@ export const { app, resize: resizeApp } = createApplication({
     backgroundColor: 0x333333
   }
 })
+export const getScreenSize = () => ({
+  sw: app.screen.width,
+  sh: app.screen.height
+})

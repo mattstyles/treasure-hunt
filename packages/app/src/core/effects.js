@@ -8,7 +8,7 @@ import { actions } from 'raid-streams/screen'
 import { tickActions } from './streams'
 import { noop } from './utils'
 import { getState } from '../states/index'
-import { stats } from '../app'
+import { stats } from './app'
 
 /**
  * Fires the callback in response to a screen resize event

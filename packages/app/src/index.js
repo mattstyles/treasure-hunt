@@ -1,13 +1,12 @@
 
 import { resize } from 'raid-streams/screen'
 import keys from 'raid-streams/keys'
-// import tick from 'raid-streams/tick'
 
 import { resizeScreen, debug, render } from './core/effects'
 import { appUpdates } from './core/updates'
 import { signal } from './core/state'
 import { renderTick, updateTick } from './core/streams'
-import { resizeApp } from './app'
+import { resizeApp } from './core/app'
 
 /**
  * Setup screen
@@ -28,8 +27,7 @@ signal.mount(resize({
   el: window
 }))
 signal.mount(keys())
-// signal.mount(tick())
-// signal.mount(renderTick())
+signal.mount(renderTick())
 signal.mount(updateTick({
   rate: 1000 / 8
 }))
@@ -55,7 +53,7 @@ signal.register(appUpdates)
 // test tick update timing
 signal.register((state, event) => {
   if (event.type === '@@tick/update') {
-    console.log('>>', state.count, event.payload.dt)
+    // console.log('>>', state.count, event.payload.dt)
     return {
       ...state,
       count: state.count + 1 || 0

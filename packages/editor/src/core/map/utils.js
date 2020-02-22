@@ -10,19 +10,25 @@ export const createApplication = (canvas, {
 }) => {
   console.log('Creating PIXI application')
 
+  const dpr = window.devicePixelRatio || 1
   const width = (viewport[0] * cellSize[0]) / scale
   const height = (viewport[1] * cellSize[1]) / scale
+
+  // Scale canvas back to account for pixel ratio scaling
+  canvas.style.width = `${width}px`
+  canvas.style.height = `${height}px`
 
   const appInstance = new Application({
     width: width,
     height: height,
     backgroundColor: 0x303334,
-    resolution: scale,
+    resolution: dpr,
     view: canvas
   })
 
   const container = new Container()
   appInstance.stage.addChild(container)
+  container.scale.set(scale)
 
   return {
     appInstance,

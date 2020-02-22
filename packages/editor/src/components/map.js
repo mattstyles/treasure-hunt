@@ -2,6 +2,8 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { Application, Sprite } from 'pixi.js'
 import { Point } from 'mathutil'
+import { Button } from 'react-basic-kit'
+import { random } from 'lodash'
 
 import { createApplication, createCamera } from 'core/map/utils'
 import { frames } from 'core/map/textures'
@@ -36,13 +38,19 @@ const useApp = (canvasRef, {
 
     /**
      * Add sprite as a test of rendering
+     * @TODO how to expose this for manipulation somehow
      */
     const dude = new Sprite(frames[2])
-    const dudePosition = Point.of(10, 10)
+    const dudePosition = Point.of(31, 24)
     dude.tint = 0xFAF089
     cameraContainer.addChild(dude)
 
-    cameraInstance.translateSprite(dude, ...dudePosition.pos)
+    window.dude = dude
+    window.dudePosition = dudePosition
+
+    appInstance.ticker.add(() => {
+      cameraInstance.translateSprite(dude, ...dudePosition.pos)
+    })
 
     return () => {
       console.log('Running Map::useApp::useEffect return')
@@ -60,6 +68,20 @@ const useApp = (canvasRef, {
   }
 }
 
+// const useRenderTick = (app, callback) => {
+//   useEffect(() => {
+//     if (!app || !callback || !(app instanceof Application)) {
+//       return
+//     }
+//
+//     app.ticker.add(callback)
+//
+//     return () => {
+//       app.ticker.remove(callback)
+//     }
+//   })
+// }
+
 export const Map = ({
   viewport,
   scale,
@@ -73,11 +95,23 @@ export const Map = ({
   })
 
   return (
-    <canvas
-      ref={canvasRef}
-      width={640}
-      height={480}
-      style={{ display: 'block' }}
-    />
+    <>
+      <canvas
+        ref={canvasRef}
+        style={{ display: 'block' }}
+      />
+      <Button
+        colour='blue'
+        sx={{ mt: 4 }}
+        onClick={() => {
+          // @TODO no good globalising on the window
+          if (window.dudePosition) {
+            window.dudePosition.translate(random(-5, 5), random(-5, 5))
+          }
+        }}
+      >
+        This is a test, click me
+      </Button>
+    </>
   )
 }

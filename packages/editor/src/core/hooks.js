@@ -9,7 +9,7 @@ export const useMount = (type, payload = null) => {
       return
     }
     emit(type, payload)
-  })
+  }, [])
 }
 
 export const useUnmount = (type, payload = null) => {

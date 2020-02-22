@@ -1,10 +1,12 @@
 
-import { View, H1 } from 'react-basic-kit'
+import { View } from 'react-basic-kit'
+
+import { Map } from 'components/map'
 
 export const Main = ({ state }) => {
   return (
-    <View>
-      <H1>Hello world</H1>
+    <View sx={{ p: 4 }}>
+      <Map viewport={[64, 48]} scale={1} />
     </View>
   )
 }

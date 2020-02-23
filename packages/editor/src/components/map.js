@@ -3,10 +3,15 @@ import React, { useRef, useEffect, useState } from 'react'
 import { Application, Sprite } from 'pixi.js'
 import { Point } from 'mathutil'
 import { Button } from 'react-basic-kit'
-import { random } from 'lodash'
+// import random from 'lodash.random'
 
 import { createApplication, createCamera } from 'core/map/utils'
 import { frames } from 'core/map/textures'
+
+// @TODO this isn't veyr good
+const random = (a, b) => {
+  return a + (Math.random() * (b - a) | 0)
+}
 
 const useApp = (canvasRef, {
   viewport,

@@ -7957,6 +7957,11 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
+lodash.random@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.random/-/lodash.random-3.2.0.tgz#96e24e763333199130d2c9e2fd57f91703cc262d"
+  integrity sha1-luJOdjMzGZEw0sni/Vf5FwPMJi0=
+
 lodash.set@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/lodash.set/-/lodash.set-4.3.2.tgz#d8757b1da807dde24816b0d6a84bea1a76230b23"
@@ -10254,6 +10259,11 @@ raid@^4.0.0:
   dependencies:
     eventemitter3 "^4.0.0"
     most "^1.8.0"
+
+rambda@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/rambda/-/rambda-4.5.0.tgz#2f01a4387f73f87fd6fc16667e270b80cc1c6d6d"
+  integrity sha512-I0I0FxVTh3KKm+CX9I57dT+DcOvvdo9w87U+Ve6N9viP7XoAq3dn2sYz619Wjr1/vRRGIxXFjaJj4HnpK4P2lw==
 
 ramda@^0.26:
   version "0.26.1"

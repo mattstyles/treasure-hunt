@@ -1,7 +1,7 @@
 
 import { createActions } from 'raid-navigator'
 import { createMemoryHistory } from 'history'
-import { get } from 'lodash/fp'
+import { prop } from 'rambda'
 
 export { routes } from './routes'
 
@@ -23,4 +23,4 @@ export const pop = () => {
   actions.back()
 }
 
-export const getNavigation = get('navigation')
+export const getNavigation = prop('navigation')

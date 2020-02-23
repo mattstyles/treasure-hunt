@@ -83,7 +83,7 @@
     "history": "^4.9.0",
     "lodash": "^4.17.11",
     "mathutil": "^3.0.2",
-    "most": "^1.7.3",
+    "most": "^1.8.0",
     "pixi-holga": "^0.6.0",
     "pixi-spritepool": "^0.3.2",
     "pixi.js": "^5.2.1",

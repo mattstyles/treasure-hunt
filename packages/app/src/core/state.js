@@ -1,8 +1,8 @@
 
 import { Signal } from 'raid'
-import { plug } from 'raid-addons/lib/plug'
-import { lock } from 'raid-addons/lib/lock'
-import arc from 'raid-addons/lib/arc'
+import { plug } from '@raid/addons/lib/plug'
+import { lock } from '@raid/addons/lib/lock'
+import arc from '@raid/addons/lib/arc'
 
 import { appStates } from '../states/index'
 import { getScreenSize } from './app'

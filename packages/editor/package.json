@@ -79,6 +79,9 @@
     "standard": "^14.3.1"
   },
   "dependencies": {
+    "@raid/addons": "^5.0.1",
+    "@raid/navigator": "^5.0.1",
+    "@raid/streams": "^5.0.1",
     "eventemitter3": "^4.0.0",
     "history": "^4.9.0",
     "lodash": "^4.17.11",
@@ -90,9 +93,6 @@
     "pixi.js": "^5.2.1",
     "prop-types": "^15.7.2",
     "raid": "^4.0.0",
-    "raid-addons": "^4.0.0",
-    "raid-navigator": "^4.0.0",
-    "raid-streams": "^4.0.0",
     "rambda": "^4.5.0",
     "react": "^16.12.0",
     "react-basic-kit": "^0.11.0",

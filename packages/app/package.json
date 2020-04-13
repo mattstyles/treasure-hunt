@@ -63,6 +63,8 @@
     "standard": "^14.3.1"
   },
   "dependencies": {
+    "@raid/addons": "^5.0.1",
+    "@raid/streams": "^5.0.1",
     "actionkey": "^1.0.1",
     "canvas-fit": "^1.5.0",
     "eventemitter3": "^4.0.0",
@@ -75,8 +77,6 @@
     "pixi.js": "^5.1.5",
     "raf-stream": "^3.0.0",
     "raid": "^3.4.0",
-    "raid-addons": "^3.4.0",
-    "raid-streams": "^3.4.0",
     "stats.js": "^0.17.0"
   }
 }

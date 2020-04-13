@@ -1,9 +1,9 @@
 
-import safe from 'raid-addons/lib/safe'
-import compress from 'raid-addons/lib/compress'
-import rawDebug from 'raid-addons/lib/debug'
-import scope from 'raid-addons/lib/scope'
-import { actions } from 'raid-streams/screen'
+import safe from '@raid/addons/lib/safe'
+import compress from '@raid/addons/lib/compress'
+import rawDebug from '@raid/addons/lib/debug'
+import scope from '@raid/addons/lib/scope'
+import { actions } from '@raid/streams/screen'
 
 import { tickActions } from './streams'
 import { noop } from './utils'

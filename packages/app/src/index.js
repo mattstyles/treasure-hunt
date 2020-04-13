@@ -1,6 +1,6 @@
 
-import { resize } from 'raid-streams/screen'
-import keys from 'raid-streams/keys'
+import { resize } from '@raid/streams/screen'
+import keys from '@raid/streams/keys'
 
 import { resizeScreen, debug, render } from './core/effects'
 import { appUpdates } from './core/updates'
